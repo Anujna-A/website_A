@@ -15,7 +15,7 @@ body {
 }
 
 .space-grotesk {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: Space Grotesk, sans-serif;
 }
 .text-muted-foreground {
   color: hsl(var(--muted-foreground)) !important;

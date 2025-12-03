@@ -45,7 +45,21 @@ export const StyledMenubar = styled(Menubar)(({ theme }) => ({
     border: "1px solid hsl(var(--border))",
   },
   "& .p-menuitem-content": {
-    padding: "6px",
+    paddingLeft: "10px",
+  },
+  // Mobile styles
+  "@media screen and (max-width: 960px)": {
+    "&.p-menubar.p-menubar-mobile-active .p-menubar-root-list": {
+      display: "flex",
+      flexDirection: "column",
+      top: "100%",
+      left: "-100px",
+      width: "140px",
+      zIndex: 1,
+    },
+    "& .p-menuitem-link": {
+      display: "inline",
+    },
   },
 }));
 
@@ -54,6 +68,7 @@ export const StyledPrimaryButton = styled(Button)(({ theme }) => ({
   fontWeight: "500",
   padding: "12px 24px",
   borderRadius: "calc(var(--radius) - 2px)",
+  background: "hsl(var(--accent))",
 }));
 
 export const StyledOutlineButton = styled(Button)(({ theme }) => ({

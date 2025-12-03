@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase/firebase";
-import "../styles/Contact.css"; // 👈 Import the CSS file
 import Footer from "../components/Footer";
 import {
   StyledColoredDiv,
@@ -251,7 +250,7 @@ function Contact() {
                     id="subject"
                     name="subject"
                     aria-describedby="subject-help"
-                    placeholder="Rahul"
+                    placeholder="Course Inquiry regarding Web Development"
                     value={formData.subject}
                     onChange={handleChange}
                   />

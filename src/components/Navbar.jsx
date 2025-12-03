@@ -62,15 +62,7 @@ const Navbar = () => {
             logo
           </Link>
         </div>
-        {/* <ul className="navbar-link">
-        <li>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/courses">Courses</Link>
-          <Link to="/testimonials">Testimonials</Link>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul> */}
+
         <StyledMenubar model={items} />
       </nav>
     </>

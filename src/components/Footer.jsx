@@ -5,13 +5,13 @@ const Footer = () => {
 
   return (
     <div
-      className="py-6 md:py-6 w-12"
+      className="py-6 md:py-6 w-12 px-4"
       style={{
         background: " hsl(var(--muted) / .4)",
         borderTop: "1px solid hsl(var(--border))",
       }}
     >
-      <div className="grid col-10 gap-5 mx-auto">
+      <div className="grid gap-5 mx-auto">
         <div className="md:col-4 mx-auto sm:col-5 col-5 ">
           <span
             className="text-xl font-semibold	space-grotesk"
