@@ -72,10 +72,11 @@ export const StyledPrimaryButton = styled(Button)(({ theme }) => ({
 }));
 
 export const StyledOutlineButton = styled(Button)(({ theme }) => ({
-  color: "hsl(var(--button-foreground))",
+  color: "hsl(var(--primary-foreground))",
   fontWeight: "500",
   padding: "12px 24px",
-  borderRdius: "calc(var(--radius) - 2px)",
+  borderRadius: "calc(var(--radius) - 2px)",
+  background: "hsl(var(--accent))",
 }));
 
 export const StyledColoredDiv = styled("div")(({ theme }) => ({

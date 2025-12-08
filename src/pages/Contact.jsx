@@ -105,7 +105,7 @@ function Contact() {
         <div style={{ maxWidth: "896px", margin: "auto" }}>
           <StyledColoredDiv className="grid grid-nogutter radius border-1">
             {/* contact */}
-            <div className="p-4 col-6">
+            <div className="p-4 col-12 md:col-6">
               <div className="mb-4">
                 <h3 className="text-2xl	line-height-1 space-grotesk tracking-tight">
                   Contact Information
@@ -202,7 +202,7 @@ function Contact() {
               </div>
             </div>
             {/* send message */}
-            <div className="p-4 col-6 border-left-1	">
+            <div className="p-4 col-12 border-left-1	md:border-left-none md:col-6">
               <div className="mb-4">
                 <h3 className="text-2xl	line-height-1 space-grotesk tracking-tight">
                   Send us a Message

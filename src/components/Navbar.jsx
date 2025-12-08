@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "../styles/navbar.css"; // include the .css extension
 
 import { StyledMenubar } from "./styled-components";
-import logo from "../assets/logo.png";
+import logo1 from "../assets/logo1.png";
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -56,12 +56,16 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="logo">
-          <Link to="/">
-            {/* <img src={logo} height={"64px"} /> */}
-            logo
-          </Link>
-        </div>
+        <Link to="/" style={{ display: "block" }}>
+          <div className="logo">
+            <img
+              src={logo1}
+              height={64}
+              style={{ display: "inline", verticalAlign: "baseline" }}
+            />
+            {/* <p> unlock ur teck potential</p> */}
+          </div>
+        </Link>
 
         <StyledMenubar model={items} />
       </nav>
