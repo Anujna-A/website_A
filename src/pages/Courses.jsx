@@ -5,6 +5,13 @@ import {
 } from "../components/styled-components";
 import "../styles/services.css";
 import courseImg from "../assets/courses.webp";
+import javascript from "../assets/javascript.png";
+import mern from "../assets/mern.png";
+import python from "../assets/python.png";
+import testing from "../assets/testing.png";
+import react from "../assets/react.png";
+import manual from "../assets/manual.png";
+import automation from "../assets/automation.png";
 
 // ✅ Lazy load only Footer (styled components are small, keep them)
 const Footer = lazy(() => import("../components/Footer"));
@@ -18,42 +25,42 @@ const Loader = ({ height = "50vh", size = "2rem" }) => (
 
 const CourseConfigData = [
   {
-    image: courseImg,
+    image: javascript,
     tag: "Web Development",
     title: "JavaScript for Beginners",
     description:
       "Master the fundamentals of JavaScript, the language of the web.",
   },
   {
-    image: courseImg,
+    image: react,
     tag: "Web Development",
     title: "Advanced React & State Management",
     description:
       "Deep dive into React, hooks, context, and modern state management libraries.",
   },
   {
-    image: courseImg,
+    image: python,
     tag: "Python Full Stack",
     title: "Python Full Stack Development",
     description:
       "Build robust and scalable web applications using Python with Django.",
   },
   {
-    image: courseImg,
+    image: manual,
     tag: "Manual Testing",
     title: "QA Fundamentals & Theory",
     description:
       "Learn the core principles of software quality assurance and testing.",
   },
   {
-    image: courseImg,
+    image: automation,
     tag: "Automation Testing",
     title: "Selenium WebDriver Mastery",
     description:
       "Automate web browser testing with the industry-standard Selenium.",
   },
   {
-    image: courseImg,
+    image: mern,
     tag: "Web Development",
     title: "MERN Full Stack Development",
     description:
@@ -79,7 +86,12 @@ const Courses = () => {
           {CourseConfigData.map((service, index) => (
             <div key={index} className="md:col-6 lg:col-4 mt-3">
               <StyledColoredDiv className="border-1 h-full radius">
-                <img src={service.image} alt={service.title} width="100%" />
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  width="100%"
+                  height={250}
+                />
                 <div className="p-4">
                   <div className="text-xl font-semibold space-grotesk tracking-tight pb-4">
                     {service.title}

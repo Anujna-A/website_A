@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import SideImg from "../assets/heroSection.png";
 import { StyledOutlineButton, StyledPrimaryButton } from "./styled-components";
 function HeroSection() {
+  const navigate = useNavigate();
   return (
     <div className="md:py-6 sm:py-2 w-12">
       <div className="grid col-10 m-auto gap-12">
@@ -13,11 +15,15 @@ function HeroSection() {
           </p>
           <div className="flex gap-2">
             <StyledPrimaryButton
+              onClick={() => navigate("/courses")}
               label="Explore Courses"
               icon="pi pi-check"
               iconPos="right"
             />
-            <StyledOutlineButton>Get in touch</StyledOutlineButton>
+            <StyledOutlineButton onClick={() => navigate("/contact")}>
+              {" "}
+              Get in touch
+            </StyledOutlineButton>
           </div>
         </section>
         <section className="col-12 md:col-6">

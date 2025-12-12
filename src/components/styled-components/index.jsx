@@ -92,6 +92,7 @@ export const StyledFeatureCards = styled(Card)(({ theme }) => ({
     maxHeight: "192px",
     minHeight: "192px",
     objectFit: "cover",
+    borderRadius: "6px 6px 0 0",
   },
   ".p-card-title": {
     padding: "24px",

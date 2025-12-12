@@ -44,18 +44,6 @@ const coursesConfig = [
 
 const header = (imageUrl) => <img alt="Card Banner" src={imageUrl} />;
 
-const footer = (
-  <>
-    <Button label="Save" icon="pi pi-check" />
-    <Button
-      label="Cancel"
-      severity="secondary"
-      icon="pi pi-times"
-      style={{ marginLeft: "0.5em" }}
-    />
-  </>
-);
-
 const FeaturedCourses = () => {
   return (
     <>
