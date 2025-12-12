@@ -2,13 +2,18 @@ import { StyledColoredDiv, StyledFeatureCards } from "./styled-components";
 import { Card } from "primereact/card";
 import { Button } from "primereact/button";
 
+import javascript from "../assets/javascript.png";
+import mern from "../assets/mern.png";
+import python from "../assets/python.png";
+import testing from "../assets/testing.png";
+
 const coursesConfig = [
   {
     title: "JavaScript Essentials",
     description:
       "Kickstart your web development journey by mastering JavaScript, the backbone of modern websites.",
     tagline: "Web Development",
-    bannerImage: "src/assets/javascript.png",
+    bannerImage: javascript,
     path: "/course-1",
   },
   {
@@ -16,7 +21,7 @@ const coursesConfig = [
     description:
       "Become a full-stack web developer by building dynamic apps with MongoDB, Express, React, and Node.js.",
     tagline: "Full Stack Development",
-    bannerImage: "src/assets/mern.png",
+    bannerImage: mern,
     path: "/course-2",
   },
   {
@@ -24,7 +29,7 @@ const coursesConfig = [
     description:
       "Unlock the power of Python to build applications, automate tasks, and solve real-world problems.",
     tagline: "Python Development",
-    bannerImage: "src/assets/python.png",
+    bannerImage: python,
     path: "/course-3",
   },
   {
@@ -32,7 +37,7 @@ const coursesConfig = [
     description:
       "Learn essential QA concepts and testing techniques to ensure high-quality software delivery.",
     tagline: "Software Testing",
-    bannerImage: "src/assets/testing.png",
+    bannerImage: testing,
     path: "/course-4",
   },
 ];
