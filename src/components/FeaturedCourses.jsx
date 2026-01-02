@@ -58,7 +58,10 @@ const FeaturedCourses = () => {
         </p>
         <div className="grid col-10 m-auto">
           {coursesConfig.map((course) => (
-            <div key={course.id} className="lg:col-3 md:col-6 sm:col-12 mt-3 ">
+            <div
+              key={course.title}
+              className="lg:col-3 md:col-6 sm:col-12 mt-3 "
+            >
               <StyledFeatureCards
                 title={course.title}
                 subTitle={course.description}

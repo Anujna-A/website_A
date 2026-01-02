@@ -32,7 +32,7 @@ function About() {
         </div>
       </StyledColoredDiv>
       <div className="md:py-6 sm:py-2 w-12">
-        <div className="grid">
+        <div className="grid grid-nogutter">
           <section className="col-12">
             <p className="text-5xl font-bold text-center">
               Our Guiding Principles
@@ -40,8 +40,8 @@ function About() {
             <p className="text-lg font-medium text-center text-muted-foreground">
               The core beliefs that drive our commitment to student success.
             </p>
-            <div className="grid md:col-9 md:m-auto mt-6 col-12 ">
-              <div className="grid-nogutter	 md:col-6 col-12">
+            <div className="grid grid-nogutter md:col-9 md:m-auto mt-6 col-12 ">
+              <div className=" md:col-6 col-12">
                 <div className="flex gap-4 md:pr-4	">
                   <div>
                     <div className="about-icon-background  border-circle">
@@ -74,7 +74,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className=" grid-nogutter md:col-6 col-12">
+              <div className=" md:col-6 col-12">
                 <div className="flex gap-4	md:pl-4">
                   <div>
                     <div className="about-icon-background  border-circle">
