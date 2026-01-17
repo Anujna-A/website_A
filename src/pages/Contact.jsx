@@ -19,8 +19,8 @@ function Contact() {
     subject: "",
     message: "",
   });
+
   const [loading, setLoading] = useState(false);
-  console.log(formData);
 
   const handleChange = (e) => {
     console.log(e.target);
