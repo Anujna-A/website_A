@@ -3,6 +3,7 @@ import "../styles/navbar.css"; // include the .css extension
 
 import { StyledMenubar } from "./styled-components";
 import logo1 from "../assets/logo1.png";
+import { downloadBrochure } from "./utils";
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -50,6 +51,59 @@ const Navbar = () => {
     {
       label: "Contact",
       command: () => navigate("/contact"), // Add path if needed
+    },
+    {
+      label: "Download Brochure",
+      items: [
+        {
+          label: "Data Analyst",
+          command: () =>
+            downloadBrochure(
+              "/brochures/data-analyst.xlsx",
+              "Data-Analyst-Brochure.xlsx",
+            ),
+        },
+        {
+          label: "Data Science",
+          command: () =>
+            downloadBrochure(
+              "/brochures/data-science.xlsx",
+              "Data-Science-Brochure.xlsx",
+            ),
+        },
+        {
+          label: "React JS",
+          command: () =>
+            downloadBrochure(
+              "/brochures/react-js.xlsx",
+              "React-JS-Brochure.xlsx",
+            ),
+        },
+        {
+          label: "MERN Full Stack",
+          command: () =>
+            downloadBrochure(
+              "/brochures/mern-full-stack.xlsx",
+              "MERN-Full-Stack-Brochure.xlsx",
+            ),
+        },
+        {
+          label: "Python Full Stack",
+          command: () =>
+            downloadBrochure(
+              "/brochures/python-full-stack.xlsx",
+              "Python-Full-Stack-Brochure.xlsx",
+            ),
+        },
+        {
+          label: "Automation Testing",
+          command: () =>
+            downloadBrochure(
+              "/brochures/automation-testing.xlsx",
+              "Automation-Testing-Brochure.xlsx",
+            ),
+        },
+      ],
     },
   ];
 
