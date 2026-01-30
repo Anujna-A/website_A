@@ -6,7 +6,7 @@ import logo1 from "../assets/logo1.png";
 import { downloadBrochure } from "./utils";
 const Navbar = () => {
   const navigate = useNavigate();
-
+ 
   const items = [
     {
       label: "Home",
