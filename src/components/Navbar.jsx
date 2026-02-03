@@ -6,7 +6,7 @@ import logo1 from "../assets/logo1.png";
 import { downloadBrochure } from "./utils";
 const Navbar = () => {
   const navigate = useNavigate();
- 
+
   const items = [
     {
       label: "Home",
@@ -14,15 +14,15 @@ const Navbar = () => {
       command: () => navigate("/"),
     },
     {
-      label: "About Us",
-      command: () => navigate("/about"),
-    },
-    {
       label: "Courses",
       command: () => navigate("/courses"),
     },
     {
-      label: "Services",
+      label: "Product",
+      command: () => navigate("/product"),
+    },
+    {
+      label: "Training Services",
       command: () => navigate("/services"),
 
       // items: [
@@ -49,13 +49,71 @@ const Navbar = () => {
       // ],
     },
     {
+      label: "Consulting Services",
+      command: () => navigate("/Consulting services"),
+
+      items: [
+        {
+          label: "Technical Services",
+          command: () => navigate("/theming"),
+
+          items: [
+            {
+              label: "Artifical Intelligence"
+              // command: () => navigate("/product"),
+            },
+            {
+              label: "Cyber Security"
+              // command: () => navigate("/product"),
+            },
+            {
+              label: "IOT"
+              // command: () => navigate("/product"),
+            },
+            {
+              label: "Embedded"
+              // command: () => navigate("/product"),
+            },
+            {
+              label: "Data Science"
+              // command: () => navigate("/product"),
+            },
+            {
+              label: "Cloud Computing"
+              // command: () => navigate("/product"),
+            },
+            {
+              label: "SaaS"
+              // command: () => navigate("/product"),
+            },
+          ],
+        },
+        {
+          label: "Management Services",
+          command: () => navigate("/theming"),
+        },
+        {
+          label: "Placement Services",
+          command: () => navigate("/theming"),
+        },
+        {
+          label: "Legal Services",
+          command: () => navigate("/theming"),
+        },
+        {
+          label: "GCC/Startup Mentorship",
+          command: () => navigate("/theming"),
+        },
+      ],
+    },
+    {
       label: "Contact",
       command: () => navigate("/contact"), // Add path if needed
     },
     {
       label: "Download Brochure",
       items: [
-         {
+        {
           label: "MERN Full Stack",
           command: () =>
             downloadBrochure(
@@ -63,7 +121,7 @@ const Navbar = () => {
               "MERN-Full-Stack-Brochure.xlsx",
             ),
         },
-         {
+        {
           label: "Python Full Stack",
           command: () =>
             downloadBrochure(
@@ -95,8 +153,8 @@ const Navbar = () => {
         //       "React-JS-Brochure.xlsx",
         //     ),
         // },
-       
-       
+
+
         // {
         //   label: "Automation Testing",
         //   command: () =>
@@ -106,6 +164,10 @@ const Navbar = () => {
         //     ),
         // },
       ],
+    },
+    {
+      label: "About Us",
+      command: () => navigate("/about"),
     },
   ];
 

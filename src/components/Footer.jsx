@@ -40,20 +40,43 @@ const Footer = () => {
           <p className="text-sm	my-1  text-muted-foreground">Career Development</p>
         </div>
         <div className="md:col-2 mx-auto sm:col-5 col-5">
-          <h4 className="font-semibold	space-grotesk">Services</h4>
+         <h4 className="font-semibold	space-grotesk">Product</h4>
 
+          <p className="text-sm	my-1  text-muted-foreground">Artifical Intelligence</p>
+          <p className="text-sm	my-1  text-muted-foreground">Cyber Security</p>
+          <p className="text-sm	my-1  text-muted-foreground">
+            SaaS
+          </p>
+        </div>
+        <div className="md:col-2 mx-auto sm:col-5 col-5">
+          <h4 className="font-semibold	space-grotesk">Services</h4>
           <p className="text-sm	my-1  text-muted-foreground">College Training</p>
+          <p className="text-sm	my-1  text-muted-foreground">Corporate Training</p>
           <p className="text-sm	my-1  text-muted-foreground">
-            Corporate Training
+           Interships & Projects 
           </p>
           <p className="text-sm	my-1  text-muted-foreground">
-            Interships & Projects
-          </p>
-          <p className="text-sm	my-1  text-muted-foreground">
-            Individual Training
+           Individual Training
           </p>
           <p className="text-sm	my-1  text-muted-foreground">Hire from Us</p>
         </div>
+        <div className="md:col-2 mx-auto sm:col-5 col-5">
+         <h4 className="font-semibold	space-grotesk">Consulting Services</h4>
+
+          <p className="text-sm	my-1  text-muted-foreground">Technical Services</p>
+          <p className="text-sm	my-1  text-muted-foreground">
+            Management Services
+          </p>
+          <p className="text-sm	my-1  text-muted-foreground">
+          Placement Services
+          </p>
+          <p className="text-sm	my-1  text-muted-foreground">
+          Legal Services
+          </p>
+          <p className="text-sm	my-1  text-muted-foreground">
+          GCC/Startup Mentorship
+          </p>
+        </div> 
         <div className="md:col-2 mx-auto sm:col-5 col-5">
           <h4 className="font-semibold	space-grotesk">Company</h4>
           <p className="text-sm	my-1  text-muted-foreground">About Us</p>
@@ -65,7 +88,7 @@ const Footer = () => {
           <p className="text-sm	my-1  text-muted-foreground">Privacy Policy</p>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 

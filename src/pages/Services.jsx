@@ -412,7 +412,7 @@ const Services = () => {
       <div className="py-4 px-4">
         <div className="mb-6">
           <h1 className="text-6xl space-grotesk text-center	card">
-            Our Services{" "}
+            Trainings{" "}
           </h1>
           <p className="mb-3 text-muted-foreground text-center	">
             Empowering students and professionals with cutting-edge IT training
