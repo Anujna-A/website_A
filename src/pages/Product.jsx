@@ -27,21 +27,21 @@ const CourseConfigData = [
   {
     image: javascript,
     tag: "Artifical Intelligence",
-    title: "JavaScript for Beginners",
+    title: "Artifical Intelligence",
     description:
       "Master the fundamentals of JavaScript, the language of the web.",
   },
    {
     image: mern,
     tag: "Cyber Security",
-    title: "MERN Full Stack Development",
+    title: "Cyber Security",
     description:
       "Learn to build modern web apps with MongoDB, Express, React & Node.js.",
   },
   {
     image: python,
     tag: "SaaS",
-    title: "Python Full Stack Development",
+    title: "SaaS",
     description:
       "Build robust and scalable web applications using Python with Django.",
   },
